@@ -148,3 +148,24 @@ How many minutes can a shared web app run for? 	60 minutes
 What are the 5 steps needed to create Azure File Sync? 	-Allow port 4443 outbound, create file sync service, install agent on server and register, create sync group and cloud endpoint, register server and share
 What is the maxx quito for vCPU on a subscription and if i have a VM is deallocated, does this count towards my quota? 	20 - both allocated and deallocated machines count.
 Do free space policies for azure file sync apply to each server individually? 	No Most restrictive applied.
+How do you configure a report to be sent to individuals for resources consuming more than expected?	Configure report in the const management portal, JSON or CSV
+When would you use WaImportV2 over WalImportV1 when using teh Azure Import/Export Service? 	If you need to import into Azure Files v2 is needed.
+What happens with duplicate files on Azure File sync 	-servername is appended into the filename.
+Azure Export Jobs Steps 	Create export job specify containers, Check the number of Drive with WAImportExport, ship empty drives to Ms with tracking, update tracking, recieve and unlock with bitlocker keys
+What app service plan supports webjobs? 	Basic App plan
+Which mode in JSON templates for Azure Policy checked the features supported? 	Indexed
+What is the minimum App Service Plan needed to use deployment slots? 	 	 Standard App Service Plan
+I have a web app that needs to run for 240 (mins) per day what is the best Dev test plan for me? 	D1 App Service Plan
+I have a basic app service plan, can I do cloning? If not what plan is needed 	Standard App Service Plan
+What is the SLA for 2x VMs across 2x AV Zones in the same region? 	99.99%
+What is the SLA for 2x VMs across 1x AV set? 	99.95%
+What is the SLA for 1x VM across SSD for OS and Data? 	99.9%
+What is the maximum amount of fault domains? 	3
+What is the maximum number of update domains? 	20
+Azure private DNS needs to be linked to multiple VNETS (T/F) 	True
+What command is used to update VPN gateway with subnet? A.Set-AzLocalNetwrokGateway B.Set-AzNetwrokInterface C.Add-AzVirtualNetwrokSubnetConfig 	Set-AzLocalNetworkGateway
+Which two features are not supported on Azure File Sync Service? 	Deduplication, scale-out file server (has to be general)
+What are the 4 steps involved in troubleshooting VPN issues? 	Enable Netwrok Watcher, Start VPN logging, Check SEC associations, Check onpremise VPN external interfaces
+What DNS records are needed to verify a custom domain on App service? 	TXT for applicationcs.azurewebsites.net
+What is the maximum recovery period for Azure File Shares (10 years, 365 days, 31 days, 120 days) 	10 years retention
+Which two files should you create before you prepare the drives for the import job? Each correct answer presents part of the solution. (a drive set CSV file, a JSON configuration file, a powershell ps1 file, a dataset CSV file) 	a driveset CSV file and a dataset CSV file.
